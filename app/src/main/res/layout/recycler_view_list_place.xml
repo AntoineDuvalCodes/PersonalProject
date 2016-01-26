@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+
+    <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        android:orientation="vertical" android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="10dp"
+            >
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/tvNamePlaceTextSearch"
+                android:text="tvNamePlaceTextSearch"
+                android:textStyle="bold"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/tvVicinityPlaceTextSearch"
+                android:text="tvVicinityPlaceTextSearch"
+                android:layout_below="@+id/tvNamePlaceTextSearch"
+                android:layout_marginTop="5dp"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/tvDistancePlaceTextSearch"
+                android:text="7.2 km"
+                android:layout_alignParentEnd="true"
+                android:layout_alignParentRight="true"/>
+
+
+            <ImageView
+                android:layout_width="24dp"
+                android:layout_height="24dp"
+                android:id="@+id/ivCategorieInfoWindow1"
+                android:layout_below="@+id/tvVicinityPlaceTextSearch"
+                android:layout_marginRight="10dp"
+                android:layout_marginTop="5dp"/>
+
+            <ImageView
+                android:layout_width="24dp"
+                android:layout_height="24dp"
+                android:id="@+id/ivCategorieInfoWindow2"
+                android:layout_below="@+id/tvVicinityPlaceTextSearch"
+                android:layout_toRightOf="@+id/ivCategorieInfoWindow1"
+                android:layout_marginTop="5dp"/>
+            <ImageView
+                android:layout_width="24dp"
+                android:layout_height="24dp"
+                android:id="@+id/ivCategorieInfoWindow3"
+                android:layout_below="@+id/tvVicinityPlaceTextSearch"
+                android:layout_toRightOf="@+id/ivCategorieInfoWindow2"
+                android:layout_marginTop="5dp"/>
+            <ImageView
+                android:layout_width="24dp"
+                android:layout_height="24dp"
+                android:id="@+id/ivCategorieInfoWindow4"
+                android:layout_below="@+id/tvVicinityPlaceTextSearch"
+                android:layout_toRightOf="@+id/ivCategorieInfoWindow3"
+                android:layout_marginTop="5dp"/>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="0.5dp"
+                android:background="@color/colorDivider"
+                android:layout_below="@+id/ivCategorieInfoWindow1"
+                android:layout_marginTop="5dp">
+
+            </LinearLayout>
+        </RelativeLayout>
+
+
+
+    </LinearLayout>
+
+</LinearLayout>

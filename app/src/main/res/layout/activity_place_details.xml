@@ -1,0 +1,109 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorHighLight">
+
+    <ProgressBar
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/progressBarMarkerInfo"
+        android:layout_gravity="center_horizontal"
+        android:layout_centerInParent="true"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:id="@+id/layTop"
+        android:layout_above="@+id/layAction">
+
+
+    <ImageView
+        android:id="@+id/topcolor"
+        android:layout_width="match_parent"
+        android:layout_height="24dp"
+        android:background="@color/colorPrimaryDark" />
+
+    <include
+        android:id="@+id/app_bar"
+        layout="@layout/app_bar" />
+
+
+
+        <android.support.v7.widget.RecyclerView
+            android:id="@+id/listOfCommentaires"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            >
+
+
+        </android.support.v7.widget.RecyclerView>
+
+
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/layAction"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/colorDivider"
+        android:orientation="horizontal"
+        android:padding="15dp"
+        android:weightSum="99"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        >
+
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="33">
+
+        <ImageView
+            android:id="@+id/ivLikeThisPlace"
+            android:layout_width="24dp"
+            android:layout_height="24dp"
+            android:layout_centerInParent="true"
+            android:background="@color/colorDivider"
+            android:src="@drawable/ic_thumb_up_black_24dp" />
+
+            <ProgressBar
+                style="?android:attr/progressBarStyleSmall"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/progressBarLike"
+                android:layout_centerInParent="true"/>
+
+
+        </RelativeLayout>
+
+
+
+        <ImageView
+            android:id="@+id/ivCommentThisPlace"
+            android:layout_width="24dp"
+            android:layout_height="24dp"
+            android:layout_weight="33"
+            android:layout_centerInParent="true"
+            android:background="@color/colorDivider"
+            android:src="@drawable/ic_textsms_black_24dp" />
+
+
+        <ImageView
+            android:id="@+id/ivTakePictureOfThisPlace"
+            android:layout_width="24dp"
+            android:layout_height="24dp"
+            android:layout_weight="33"
+            android:background="@color/colorDivider"
+            android:src="@drawable/ic_add_a_photo_black_24dp" />
+
+
+    </LinearLayout>
+
+
+
+</RelativeLayout>

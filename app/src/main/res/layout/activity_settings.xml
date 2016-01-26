@@ -1,0 +1,293 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="24dp"
+        android:background="@color/colorPrimaryDark"
+        android:id="@+id/topcolor"/>
+
+    <include
+        layout="@layout/app_bar"
+        android:id="@+id/app_bar"
+        />
+
+
+    <ScrollView
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:padding="1dp">
+
+
+        <LinearLayout
+            android:orientation="vertical"
+            android:padding="15dp"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content">
+
+
+            <LinearLayout
+                android:orientation="vertical"
+                android:layout_width="fill_parent"
+                android:layout_marginTop="10dp"
+                android:layout_height="wrap_content">
+
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textAppearance="?android:attr/textAppearanceMedium"
+                    android:text="Mon compte"
+                    android:textStyle="bold"
+                    android:textColor="@color/colorPrimary"
+                    android:id="@+id/tvMonCompte" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:orientation="horizontal"
+                android:layout_width="fill_parent"
+                android:layout_height="1dp"
+                android:background="@color/colorDivider"
+                >
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:orientation="vertical"
+                android:layout_marginTop="10dp"
+                android:id="@+id/layMail"
+                android:layout_width="fill_parent"
+                android:layout_height="70dp"
+                android:onClick="itemClikedInSettings">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textStyle="bold"
+                    android:textAppearance="?android:attr/textAppearanceMedium"
+                    android:text="Adresse e-mail"
+                    android:id="@+id/tvMailStatic" />
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="5dp"
+                    android:textAppearance="?android:attr/textAppearanceMedium"
+                    android:text="aaa@aaa.com"
+                    android:id="@+id/tvMail" />
+
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:orientation="horizontal"
+                android:layout_width="fill_parent"
+                android:layout_height="1dp"
+                android:background="@color/colorDivider">
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:orientation="vertical"
+                android:layout_marginTop="10dp"
+                android:id="@+id/layNomUtilisateur"
+                android:layout_width="fill_parent"
+                android:layout_height="70dp"
+                android:onClick="itemClikedInSettings">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textStyle="bold"
+                    android:textAppearance="?android:attr/textAppearanceMedium"
+                    android:text="Nom d'utilisateur"
+                    android:id="@+id/tvUsernamestatic" />
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="5dp"
+                    android:textAppearance="?android:attr/textAppearanceMedium"
+                    android:text="Username"
+                    android:id="@+id/tvUsername" />
+
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:orientation="horizontal"
+                android:layout_width="fill_parent"
+                android:layout_height="1dp"
+                android:background="@color/colorDivider">
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:orientation="vertical"
+                android:layout_marginTop="10dp"
+                android:id="@+id/layPassword"
+                android:layout_width="fill_parent"
+                android:layout_height="70dp"
+                android:onClick="itemClikedInSettings">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textStyle="bold"
+                    android:textAppearance="?android:attr/textAppearanceMedium"
+                    android:text="Mot de passe"
+                    android:id="@+id/tvPasswordStatic" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:inputType="textPassword"
+                    android:text="******"
+                    android:id="@+id/tvPassword"/>
+            </LinearLayout>
+
+            <LinearLayout
+                android:orientation="horizontal"
+                android:layout_width="fill_parent"
+                android:layout_height="1dp"
+                android:background="@color/colorDivider">
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:orientation="vertical"
+                android:layout_marginTop="10dp"
+                android:id="@+id/layAge"
+                android:layout_width="fill_parent"
+                android:layout_height="70dp"
+                android:onClick="itemClikedInSettings">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textAppearance="?android:attr/textAppearanceMedium"
+                    android:text="Numéro de téléphone"
+                    android:textStyle="bold"
+                    android:id="@+id/tvPhoneStatic" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="5dp"
+                    android:textAppearance="?android:attr/textAppearanceMedium"
+                    android:text="06 11 11 11 11"
+                    android:id="@+id/tvUserphone" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:orientation="horizontal"
+                android:layout_width="fill_parent"
+                android:layout_height="1dp"
+                android:background="@color/colorDivider">
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:orientation="vertical"
+                android:layout_marginTop="10dp"
+                android:id="@+id/layPhone"
+                android:layout_width="fill_parent"
+                android:layout_height="70dp"
+                android:onClick="itemClikedInSettings">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textAppearance="?android:attr/textAppearanceMedium"
+                    android:text="Date de naissance"
+                    android:textStyle="bold"
+                    android:id="@+id/tvAgeStatic" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="5dp"
+                    android:textAppearance="?android:attr/textAppearanceMedium"
+                    android:text="22/11/95"
+                    android:id="@+id/tvAge" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:orientation="horizontal"
+                android:layout_width="fill_parent"
+                android:layout_height="1dp"
+                android:background="@color/colorDivider"></LinearLayout>
+
+            <LinearLayout
+                android:orientation="horizontal"
+                android:layout_marginTop="10dp"
+                android:id="@+id/layPhoto"
+                android:layout_width="fill_parent"
+                android:layout_height="70dp"
+                android:onClick="itemClikedInSettings">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textAppearance="?android:attr/textAppearanceMedium"
+                    android:text="Photo de profil"
+                    android:textStyle="bold"
+                    android:id="@+id/tvPhoto" />
+                <ImageView
+                    android:layout_width="60dp"
+                    android:layout_height="60dp"
+                    android:layout_marginLeft="30dp"
+                    android:id="@+id/profilPicture"
+                    android:scaleType="centerCrop" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:orientation="horizontal"
+                android:layout_width="fill_parent"
+                android:layout_height="1dp"
+                android:background="@color/colorDivider"
+                ></LinearLayout>
+
+            <LinearLayout
+                android:orientation="vertical"
+                android:layout_marginTop="10dp"
+                android:id="@+id/layDeconnexion"
+                android:layout_width="fill_parent"
+                android:layout_height="70dp"
+                android:onClick="itemClikedInSettings">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textAppearance="?android:attr/textAppearanceMedium"
+                    android:text="Deconnexion"
+                    android:textStyle="bold"
+
+                    android:id="@+id/tvdeconnection" />
+            </LinearLayout>
+
+
+
+
+            <LinearLayout
+                android:orientation="horizontal"
+                android:layout_width="fill_parent"
+                android:layout_height="1dp"
+                android:background="@color/colorDivider"></LinearLayout>
+
+        </LinearLayout>
+
+
+
+
+
+    </ScrollView>
+
+
+
+</LinearLayout>

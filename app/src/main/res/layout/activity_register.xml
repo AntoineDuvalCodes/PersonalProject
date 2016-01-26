@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@color/colorPrimaryDark"
+    tools:context="com.antoine.log.Login"
+    android:padding="20dp">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="25dp"
+            android:textColor="@color/colorHighLight"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:text="Création de votre compte"
+            android:id="@+id/textView"
+            android:layout_gravity="center_horizontal" />
+
+        <de.hdodenhof.circleimageview.CircleImageView
+            xmlns:app="http://schemas.android.com/apk/res-auto"
+            android:id="@+id/choosePicture"
+            android:layout_width="70dp"
+            android:layout_height="70dp"
+            android:layout_marginTop="15dp"
+            android:layout_marginBottom="10dp"
+            android:src="@drawable/ic_person_black_48dp"
+            android:scaleType="centerCrop"
+            app:border_width="1dp"
+            app:border_color="@color/colorDivider"
+            android:layout_gravity="center_horizontal" />
+
+
+
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:inputType="textEmailAddress"
+            android:padding="10dp"
+            android:background="@color/white"
+            android:layout_marginBottom="10dp"
+            android:hint="Adresse e-mail"
+            android:ems="10"
+            android:id="@+id/etMail"
+            android:layout_gravity="center_horizontal" />
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:inputType="textPassword"
+            android:padding="10dp"
+            android:background="@color/white"
+            android:layout_marginBottom="10dp"
+            android:hint="Mot de passe"
+            android:id="@+id/etPassword"
+            android:layout_gravity="center_horizontal" />
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:inputType="textPassword"
+            android:padding="10dp"
+            android:background="@color/white"
+            android:layout_marginBottom="10dp"
+            android:hint="Confirmez le mot de passe"
+            android:id="@+id/etPassword2"
+            android:layout_gravity="center_horizontal" />
+
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="10dp"
+            android:background="@color/white"
+            android:layout_marginBottom="10dp"
+            android:hint="Nom d'utilisateur"
+            android:id="@+id/etUsername"/>
+
+
+
+
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Enregistrez moi"
+            android:background="@color/colorAccent"
+            android:layout_marginTop="20dp"
+            android:id="@+id/bRegister"/>
+
+    </LinearLayout>
+
+</ScrollView>

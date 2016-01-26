@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="24dp"
+        android:background="@color/colorPrimaryDark"
+        android:id="@+id/topcolor"/>
+
+    <include
+        layout="@layout/app_bar"
+        android:id="@+id/app_bar"
+        />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="5dp">
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/etSearchNewFriend"
+            android:padding="10dp"
+            android:layout_marginTop="10dp"
+            android:hint="Adresse, commerces, villes"
+            android:layout_marginRight="5dp"
+            android:gravity="center_vertical"
+            android:layout_centerVertical="true"
+            android:layout_toLeftOf="@+id/searchImage"/>
+
+        <ImageButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/searchImage"
+            android:scaleType="centerCrop"
+            android:src="@drawable/ic_search_black_36dp"
+            android:layout_centerVertical="true"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentEnd="true" />
+
+    </RelativeLayout>
+
+</LinearLayout>

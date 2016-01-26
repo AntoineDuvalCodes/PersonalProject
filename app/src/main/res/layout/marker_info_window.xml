@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:paddingBottom="15dp"
+    android:paddingTop="15dp">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/tvInfoWindow"
+        android:text="Aaaaaaaaaaaaaa"
+        android:textStyle="bold"
+        android:textSize="12sp"
+        android:layout_centerVertical="true"
+        android:layout_marginLeft="10dp"
+        android:layout_marginStart="10dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentLeft="true"/>
+
+    <ImageView
+        android:layout_width="24dp"
+        android:layout_height="24dp"
+        android:id="@+id/ivOpenDetailsActivity"
+        android:layout_centerVertical="true"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentRight="true"
+        android:src="@drawable/ic_keyboard_arrow_right_black_24dp"/>
+
+    <ImageView
+        android:layout_width="24dp"
+        android:layout_height="24dp"
+        android:id="@+id/ivCategorieInfoWindow"
+        android:layout_toLeftOf="@+id/ivOpenDetailsActivity"
+        android:layout_centerVertical="true"
+        android:layout_marginRight="10dp"/>
+
+    <ImageView
+        android:layout_width="24dp"
+        android:layout_height="24dp"
+        android:id="@+id/ivCategorieInfoWindow2"
+        android:layout_toLeftOf="@+id/ivCategorieInfoWindow"
+        android:layout_centerVertical="true"/>
+    <ImageView
+        android:layout_width="24dp"
+        android:layout_height="24dp"
+        android:id="@+id/ivCategorieInfoWindow3"
+        android:layout_toLeftOf="@+id/ivCategorieInfoWindow2"
+        android:layout_centerVertical="true"/>
+    <ImageView
+        android:layout_width="24dp"
+        android:layout_height="24dp"
+        android:id="@+id/ivCategorieInfoWindow4"
+        android:layout_toLeftOf="@+id/ivCategorieInfoWindow3"
+        android:layout_centerVertical="true"/>
+
+
+</RelativeLayout>

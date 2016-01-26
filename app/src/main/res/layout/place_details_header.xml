@@ -1,0 +1,272 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/layMarkerInfo"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_alignParentLeft="true"
+    android:layout_alignParentStart="true"
+    android:layout_alignParentTop="true"
+    android:background="@color/colorHighLight">
+
+    <RelativeLayout
+        android:id="@+id/layMarkerInfoTop"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:background="@color/colorHighLight">
+
+
+        <Button
+            android:id="@+id/bIsOpen"
+            android:layout_width="48dp"
+            android:layout_height="36dp"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_margin="5dp"
+            android:background="@color/green"
+            android:text="Ouvert"
+            android:textAllCaps="false"
+            android:textSize="10sp" />
+
+
+    </RelativeLayout>
+
+
+    <RelativeLayout
+        android:id="@+id/layMarkerInfoMiddle"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/layMarkerInfoTop"
+        android:background="@color/colorHighLight">
+
+        <RelativeLayout
+            android:id="@+id/layMarkerPictureInfo"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="40dp"
+            android:layout_marginRight="40dp">
+
+
+            <android.support.v4.view.ViewPager
+
+                android:id="@+id/markerPictureViewPager"
+                android:layout_width="wrap_content"
+                android:layout_height="124dp"
+                android:layout_alignParentTop="true"
+                android:layout_centerHorizontal="true">
+
+
+            </android.support.v4.view.ViewPager>
+
+        </RelativeLayout>
+
+        <ImageView
+            android:id="@+id/ivPreviousPicture"
+            android:layout_width="24dp"
+            android:layout_height="24dp"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:layout_centerVertical="true"
+            android:layout_margin="10dp"
+            android:onClick="previousPicture"
+            android:src="@drawable/ic_keyboard_arrow_left_black_24dp" />
+
+
+        <ImageView
+            android:id="@+id/ivNextPicture"
+            android:layout_width="24dp"
+            android:layout_height="24dp"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_margin="10dp"
+            android:onClick="nextPicture"
+            android:src="@drawable/ic_keyboard_arrow_right_black_24dp" />
+
+    </RelativeLayout>
+
+
+    <RelativeLayout
+        android:id="@+id/layCategoriesInfo"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_below="@+id/layMarkerInfoMiddle"
+        android:background="@color/colorHighLight"
+        android:padding="10dp">
+
+        <de.hdodenhof.circleimageview.CircleImageView xmlns:app="http://schemas.android.com/apk/res-auto"
+            android:id="@+id/ivCategorie1"
+            android:layout_width="36dp"
+            android:layout_height="36dp"
+            android:layout_centerVertical="true"
+            android:scaleType="centerCrop"
+            android:src="@drawable/ic_restaurant_menu_black_24dp"
+            app:border_color="@color/primary_dark_material_dark"
+            app:border_width="2dp" />
+
+        <de.hdodenhof.circleimageview.CircleImageView xmlns:app="http://schemas.android.com/apk/res-auto"
+            android:id="@+id/ivCategorie2"
+            android:layout_width="36dp"
+            android:layout_height="36dp"
+            android:layout_centerVertical="true"
+            android:layout_toRightOf="@+id/ivCategorie1"
+            android:scaleType="centerCrop"
+            android:src="@drawable/ic_restaurant_menu_black_24dp"
+            app:border_color="@color/primary_dark_material_dark"
+            app:border_width="2dp" />
+
+        <de.hdodenhof.circleimageview.CircleImageView xmlns:app="http://schemas.android.com/apk/res-auto"
+            android:id="@+id/ivCategorie3"
+            android:layout_width="36dp"
+            android:layout_height="36dp"
+            android:layout_centerVertical="true"
+            android:layout_toRightOf="@+id/ivCategorie2"
+            android:scaleType="centerCrop"
+            android:src="@drawable/ic_restaurant_menu_black_24dp"
+            app:border_color="@color/primary_dark_material_dark"
+            app:border_width="2dp" />
+
+        <de.hdodenhof.circleimageview.CircleImageView xmlns:app="http://schemas.android.com/apk/res-auto"
+            android:id="@+id/ivCategorie4"
+            android:layout_width="36dp"
+            android:layout_height="36dp"
+            android:layout_centerVertical="true"
+            android:layout_toRightOf="@+id/ivCategorie3"
+            android:scaleType="centerCrop"
+            android:src="@drawable/ic_restaurant_menu_black_24dp"
+            app:border_color="@color/primary_dark_material_dark"
+            app:border_width="2dp" />
+
+        <TextView
+            android:id="@+id/tvNbLikeOfPlace"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_gravity="center_vertical"
+            android:layout_marginRight="7dp"
+            android:layout_toLeftOf="@+id/ivNbLikeOfPlace"
+            android:text="0"
+            android:textColor="@color/primary_dark_material_dark" />
+
+
+        <ImageView
+            android:id="@+id/ivNbLikeOfPlace"
+            android:layout_width="24dp"
+            android:layout_height="24dp"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:src="@drawable/ic_thumb_up_black_24dp" />
+
+    </RelativeLayout>
+
+
+    <RelativeLayout
+        android:id="@+id/layAdressInfo"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/layCategoriesInfo"
+        android:background="@color/colorHighLight"
+        android:padding="10dp">
+
+
+        <ImageView
+            android:id="@+id/ivAdresse"
+            android:layout_width="24dp"
+            android:layout_height="24dp"
+            android:layout_centerVertical="true"
+            android:src="@drawable/ic_location_on_black_36dp" />
+
+
+        <TextView
+            android:id="@+id/tvPlaceVicinity"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="10dp"
+            android:layout_toLeftOf="@+id/distanceToPlace"
+            android:layout_toRightOf="@+id/ivAdresse"
+            android:text="Adresse" />
+
+        <TextView
+            android:id="@+id/distanceToPlace"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentRight="true"
+            android:text="100m" />
+
+    </RelativeLayout>
+
+
+    <ImageView
+        android:id="@+id/divider3"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_below="@+id/layAdressInfo"
+        android:background="@color/colorDivider" />
+
+    <RelativeLayout
+        android:id="@+id/layTelPlace"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/divider3"
+        android:background="@color/colorHighLight"
+        android:padding="10dp">
+
+        <ImageView
+            android:id="@+id/ivPhoneOfPlace"
+            android:layout_width="24dp"
+            android:layout_height="24dp"
+            android:src="@drawable/ic_phone_black_24dp" />
+
+        <TextView
+            android:id="@+id/tvPhoneOfPlace"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="10dp"
+            android:layout_toRightOf="@+id/ivPhoneOfPlace"
+            android:text="" />
+
+    </RelativeLayout>
+
+
+    <ImageView
+        android:id="@+id/divider4"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_below="@+id/layTelPlace"
+        android:background="@color/colorDivider" />
+
+
+    <LinearLayout
+        android:id="@+id/layCommentaires"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/divider4"
+        android:layout_marginTop="10dp"
+        android:orientation="vertical"
+        android:padding="10dp">
+
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Commentaires"
+            android:textStyle="bold" />
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="@color/colorDivider" />
+
+
+    </LinearLayout>
+
+
+</RelativeLayout>

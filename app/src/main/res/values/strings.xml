@@ -1,0 +1,22 @@
+<resources>
+    <string name="app_name">StartUpProject</string>
+    <string name="title_activity_maps">Map</string>
+
+
+    <string name="hello_world">Hello world!</string>
+    <string name="action_settings">Settings</string>
+    <string name="title_activity_sub">SubActivity</string>
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="drawer_open">Open</string>
+    <string name="drawer_close">Close</string>
+
+
+    <string-array name="tabs">
+
+        <item>TAB 1</item>
+        <item>TAB 2</item>
+
+    </string-array>
+
+
+</resources>

@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="24dp"
+        android:background="@color/colorPrimaryDark"
+        android:id="@+id/topcolor"/>
+
+    <include
+        layout="@layout/app_bar"
+        android:id="@+id/app_bar"
+        />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Votre image de profil permet à vos amis de vous reconnaitre, pour la changer, cliquer dessus."
+        android:layout_gravity="center"
+        android:gravity="center"
+        android:layout_marginTop="20dp"
+        android:textSize="20sp"
+        android:padding="10dp"
+        android:textColor="@color/primary_dark_material_dark"/>
+
+
+    <de.hdodenhof.circleimageview.CircleImageView
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        android:id="@+id/profile_image"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        app:border_width="2dp"
+        app:border_color="@color/colorPrimaryDark"
+        android:layout_centerVertical="true"
+        android:src="@drawable/ic_person_black_48dp"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="20dp"/>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="15dp"
+        android:background="@color/colorAccent"
+        android:layout_marginTop="20dp"
+        android:id="@+id/bChangePassword"
+        android:onClick="changeImage">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="ENREGISTRER"
+            android:layout_centerInParent="true"
+            android:textColor="@color/colorHighLight"
+            android:textStyle="bold"/>
+
+    </RelativeLayout>
+
+</LinearLayout>

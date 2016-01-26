@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+
+        <ImageView
+            android:id="@+id/topcolor"
+            android:layout_width="match_parent"
+            android:layout_height="24dp"
+            android:background="@color/colorPrimaryDark" />
+
+        <include
+            android:id="@+id/app_bar"
+            layout="@layout/app_bar" />
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="56dp"
+        android:background="@color/colorPrimary"
+        android:padding="5dp">
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:id="@+id/etTextSearch"
+            android:layout_toLeftOf="@+id/ivSearchWithText"
+            android:hint="Entrez une recherche"
+            android:textColorHint="@color/colorHighLight"
+            android:textColor="@color/colorHighLight"/>
+
+
+        <ImageView
+            android:layout_width="24dp"
+            android:layout_height="24dp"
+            android:id="@+id/ivSearchWithText"
+            android:src="@drawable/ic_search_white_24dp"
+            android:layout_centerVertical="true"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentRight="true"/>
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <ProgressBar
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/progressBar"
+            android:layout_centerInParent="true" />
+
+        <android.support.v7.widget.RecyclerView
+            android:id="@+id/listOfPlaceTextSeach"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            >
+
+
+        </android.support.v7.widget.RecyclerView>
+
+    </RelativeLayout>
+
+
+
+
+
+</LinearLayout>

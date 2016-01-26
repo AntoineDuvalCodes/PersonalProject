@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+
+    <ImageView
+        android:id="@+id/topcolor"
+        android:layout_width="match_parent"
+        android:layout_height="24dp"
+        android:background="@color/colorPrimaryDark" />
+
+    <include
+        android:id="@+id/app_bar"
+        layout="@layout/app_bar" />
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/layTakePhoto"
+        android:padding="10dp">
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:id="@+id/ivTakePictureOfThisPlace"
+        android:src="@drawable/ic_add_a_photo_black_24dp"
+        android:layout_marginTop="10dp"
+        android:padding="10dp"/>
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="48dp"
+        android:id="@+id/laySendPhoto"
+        android:background="@color/fbBlue"
+        android:layout_marginTop="10dp">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="ENVOYER"
+            android:id="@+id/tvSendPhoto"
+            android:layout_centerInParent="true"
+            android:textColor="@color/colorHighLight"
+            android:textStyle="bold"/>
+
+        <ProgressBar
+            android:id="@+id/progressBarSendPhoto"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true" />
+
+
+    </RelativeLayout>
+
+
+</LinearLayout>

@@ -184,7 +184,9 @@ public class MapsActivity extends ActionBarActivity implements View.OnClickListe
 
             case R.id.action_b:
 
-                startActivity(new Intent(MapsActivity.this, MyPlacesActivity.class));
+                Intent intent = new Intent(MapsActivity.this, MyPlacesActivity.class);
+                intent.putExtra("location", previousLocation);
+                startActivity(intent);
 
                 break;
 

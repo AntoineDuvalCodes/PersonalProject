@@ -127,6 +127,8 @@ public class PlacesDetailsActivity extends ActionBarActivity implements View.OnC
         locMarker.setLatitude(markerInfos.getLat());
         locMarker.setLongitude(markerInfos.getLng());
 
+        Location locTets = previousLocation;
+        Location locTest = locMarker;
         float distance = previousLocation.distanceTo(locMarker);
         distanceArrondie = (int) distance;
         distanceArrondie = (int) distanceArrondie / 100;

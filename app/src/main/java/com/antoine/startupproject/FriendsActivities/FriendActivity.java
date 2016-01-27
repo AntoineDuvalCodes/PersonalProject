@@ -11,6 +11,7 @@ import android.support.v7.widget.Toolbar;
 import android.util.Base64;
 import android.util.Log;
 import android.view.LayoutInflater;
+import android.view.MenuItem;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.ArrayAdapter;
@@ -60,7 +61,7 @@ public class FriendActivity extends ActionBarActivity {
     private ImageView backToMap;
     private RelativeLayout layMenuAmis;
     private LinearLayout layFriendPrincipal;
-    private View root;
+    private Toolbar toolbar;
     private int FriendID;
     private String FriendUsername;
 
@@ -70,9 +71,9 @@ public class FriendActivity extends ActionBarActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_friends);
 
-        //toolbar = (Toolbar) findViewById(R.id.app_bar);
-        //setSupportActionBar(toolbar);
-        //getSupportActionBar().setDisplayHomeAsUpEnabled(true);
+        toolbar = (Toolbar) findViewById(R.id.app_bar);
+        setSupportActionBar(toolbar);
+        getSupportActionBar().setDisplayHomeAsUpEnabled(true);
 
 
         layMenuAmis = (RelativeLayout) findViewById(R.id.layMenuAmis);
@@ -81,15 +82,6 @@ public class FriendActivity extends ActionBarActivity {
         layFriendPrincipal = (LinearLayout) findViewById(R.id.layFriendPrincipal);
         layMenuAmis.setClickable(false);
 
-
-        backToMap = (ImageView) findViewById(R.id.backToMap);
-        backToMap.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-
-                onBackPressed();
-            }
-        });
 
         FAB = (FloatingActionButton) findViewById(R.id.fabToAddFriend);
         lvMyFriends = (ListView) findViewById(R.id.lvMyFriends);
@@ -515,7 +507,22 @@ public class FriendActivity extends ActionBarActivity {
 
     }
 
+    @Override
+    public boolean onOptionsItemSelected(MenuItem item) {
+        switch (item.getItemId()){
 
+            case android.R.id.home:
+
+                this.finish();
+
+                return true;
+
+            default:
+
+                return super.onOptionsItemSelected(item);
+
+        }
+    }
 
     private void changeFriendsList(Friend response) {
 
@@ -570,11 +577,6 @@ public class FriendActivity extends ActionBarActivity {
         populateFriendListView(savedToPreferences.getFriendInLoggedInUser());
     }
 
-
-    @Override
-    public void onBackPressed() {
-        super.onBackPressed();
-    }
 
     private void openFriendDetailsLayout(int Friend_ID, String Friend_Username){
 

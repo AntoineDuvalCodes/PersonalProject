@@ -47,6 +47,9 @@ public class MyPlacesActivity extends ActionBarActivity implements View.OnClickL
 
         savedToPreferences = new SavedToPreferences(this);
 
+        Intent intent = getIntent();
+        location = intent.getParcelableExtra("location");
+
         toolbar = (Toolbar) findViewById(R.id.app_bar);
         setSupportActionBar(toolbar);
         getSupportActionBar().setDisplayHomeAsUpEnabled(true);
@@ -157,7 +160,9 @@ public class MyPlacesActivity extends ActionBarActivity implements View.OnClickL
 
             case R.id.fabToAddPlaces:
 
-                startActivity(new Intent(MyPlacesActivity.this, AddPlacesActivity.class));
+                Intent intent = new Intent(MyPlacesActivity.this, AddPlacesActivity.class);
+                //intent.putExtra("location", previousLocation);
+                startActivity(intent);
 
                 break;
 

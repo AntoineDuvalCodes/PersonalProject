@@ -40,8 +40,6 @@ public class SetPointOnMap {
 
     public static final int CONNECTION_TIMEOUT = 1000*50;
     public static final String SERVER_ADDRESS = "http://antoine-duval.esy.es/";
-    private static final String PLACES_API_KEY = "AIzaSyBDa-0x-M16wB4J_1-hNOH66JvU1QJeCX4";
-    private static final String GOOGLE_PLACE_SEARCH_URL = "https://maps.googleapis.com/maps/api/place/search/json?";
 
 
     public SetPointOnMap(Context context){

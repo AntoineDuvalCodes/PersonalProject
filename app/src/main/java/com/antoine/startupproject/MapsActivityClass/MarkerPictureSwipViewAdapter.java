@@ -22,15 +22,11 @@ public class MarkerPictureSwipViewAdapter extends PagerAdapter {
     private ArrayList<String> images;
     private Context context;
     private LayoutInflater layoutInflater;
-    private static final String GOOGLE_PHOTO_URL = "https://maps.googleapis.com/maps/api/place/photo?maxwidth=800&photoreference=";
-    private static final String PLACES_API_KEY = "AIzaSyBDa-0x-M16wB4J_1-hNOH66JvU1QJeCX4";
-    private boolean isNewMarker;
 
     public MarkerPictureSwipViewAdapter(Context context, ArrayList<String> images){
 
         this.context = context;
         this.images = images;
-        this.isNewMarker = true;
 
     }
 

@@ -21,8 +21,6 @@ import de.hdodenhof.circleimageview.CircleImageView;
 public class NavigationDrawerFragment extends Fragment {
 
 
-    public static final String PREF_FILE_NAME = "testpref";
-    public static final  String KEY_USER_LEARNED_DRAWER = "user_learned_drawer";
     private ActionBarDrawerToggle mDrawerToggle;
     private DrawerLayout mDrawerLayout;
     private boolean mUserLearnedDrawer;

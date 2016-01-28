@@ -50,7 +50,7 @@ public class PlacesDetailsActivity extends ActionBarActivity implements View.OnC
     private Location previousLocation;
     private RecyclerView recyclerView;
     private static final String GOOGLE_PLACE_DETAIL = "https://maps.googleapis.com/maps/api/place/details/json?placeid=";
-    private static final String PLACES_API_KEY = "AIzaSyBDa-0x-M16wB4J_1-hNOH66JvU1QJeCX4";
+    private static final String PLACES_API_KEY = "API_KEY"; //change with your personal API KEY
     private static final String GOOGLE_PHOTO_URL = "https://maps.googleapis.com/maps/api/place/photo?maxwidth=800&photoreference=";
     public static final int CONNECTION_TIMEOUT = 1000*50;
     public static final String SERVER_ADDRESS = "http://antoine-duval.esy.es/";

@@ -90,7 +90,7 @@ public class MapsActivity extends ActionBarActivity implements View.OnClickListe
     public ArrayList<MarkerInfos> listOfMarkers = null;
     private Location previousLocation = null;
     private static final String GOOGLE_PLACE_SEARCH_URL = "https://maps.googleapis.com/maps/api/place/search/json?";
-    private static final String PLACES_API_KEY = "AIzaSyBDa-0x-M16wB4J_1-hNOH66JvU1QJeCX4";
+    private static final String PLACES_API_KEY = "API_KEY"; // change with your personal API KEY
     private int NbOfOnLocationChange;
     private Switch[] switches;
     private RelativeLayout layProgressBar;

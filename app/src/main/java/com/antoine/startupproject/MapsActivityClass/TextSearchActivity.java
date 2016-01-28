@@ -32,7 +32,7 @@ import java.util.Collections;
  */
 public class TextSearchActivity extends ActionBarActivity implements View.OnClickListener{
 
-    private static final String PLACES_API_KEY = "AIzaSyBDa-0x-M16wB4J_1-hNOH66JvU1QJeCX4";
+    private static final String PLACES_API_KEY = "API_KEY"; // your API_KEY
     private static final String TEXT_SEARCH_PLACE_URL = "https://maps.googleapis.com/maps/api/place/textsearch/json?query=";
     private Toolbar toolbar;
     private EditText etTextSearch;

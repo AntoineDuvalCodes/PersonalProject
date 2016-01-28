@@ -28,6 +28,7 @@ import com.antoine.startupproject.LogRegisterAddFriendsUser.User;
 public class Settings extends ActionBarActivity{
 
     private Toolbar toolbar;
+
     private SavedToPreferences savedToPreferences;
     private TextView tvMail, tvUsername, tvPassword, tvUserphone, tvAge;
     private ImageView profilPicture;
